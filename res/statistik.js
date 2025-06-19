@@ -141,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		  method: "POST",
 		  headers: {
 			"Authorization": "Bearer " + api_key,
+			'HTTP-Referer': 'https://max-home-fit.netlify.app/routes/statistik',
 			"Content-Type": "application/json"
 		  },
 		  body: JSON.stringify({
