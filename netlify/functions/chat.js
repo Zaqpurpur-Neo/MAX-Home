@@ -18,6 +18,7 @@ exports.handler = async (event) => {
 
   const data = await openRouterResponse.json();
   console.log(data)
+	console.log(process.env.OPENROUTER_API_KEY)
 
   return {
     statusCode: 200,
