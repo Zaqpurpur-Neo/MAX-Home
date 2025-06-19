@@ -1,0 +1,157 @@
+main {
+	padding: 0;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.tentang-section {
+	width: 100%;
+	height: fit-content;
+	position: relative;
+}
+
+.tentang-section.what {
+	& h2 {
+		color: #C2692F;
+		font-size: 3.5em;
+		margin-bottom: 1em;
+	}
+
+	& p {
+		font-size: 1.5em;
+	}
+}
+
+.tentang-section.why {
+	background: #C2692F;
+
+	& .tentang-container {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		color: white;
+
+		& h2 {
+			color: white;
+			font-size: 3.5em;
+			margin-bottom: .5em;
+			text-align: left;
+		}
+
+		& p {
+			font-size: 1.15em;
+			text-align: left;
+		}	
+	}
+
+	
+}
+
+.tentang-container {
+	text-align: left;
+	width: 100%;
+	height: 80vh;
+	box-sizing: border-box;
+	padding: 8em 8em;
+
+	& h2 {
+		font-size: 2.15em;
+		text-align: center;
+	}
+
+	& p {
+		font-size: 1.15em;
+		text-align: center;
+	}
+} 
+
+.two-side-tentang {
+	text-align: left;
+	display: flex;
+	flex-direction: row-reverse;
+	height: 100vh;
+
+	& > .left {
+		box-sizing: border-box;
+		padding: 3em;
+		margin: 0;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 1.75em;
+
+		& h2 {
+			padding: 0;
+			text-align: left;
+			font-size: 4em;
+			color: #d73f11;
+			text-align: left;
+		}
+
+		& p {
+			font-size: .75em;
+		}
+	}
+
+	& > .right {
+		height: 100%;
+		padding: 0;
+
+		& img {
+			width: 50vw;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.header {
+	position: relative;
+	background: url(../assets/tentang.png);
+	width: 100%;
+	height: 90vh;
+	object-fit: cover;
+	background-position: top center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+	& .wrapper {
+		text-align: center;
+		z-index: 2;
+		& h2 { font-size: 4em; }
+	}
+}
+
+.header::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	z-index: 1;
+}
+
+header.about {
+	position: absolute;
+	
+	& nav {
+		background: none;
+		box-shadow: none;
+		color: white;
+
+		& a, & button {
+			color: white
+		}
+	}
+}

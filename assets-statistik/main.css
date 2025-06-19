@@ -1,0 +1,33 @@
+html{
+    scroll-behavior: smooth;
+    font-family: Poppins;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	font-family: 'Outfit', sans-serif;
+	background-color: #ececec;
+	opacity: 1;
+	background-image:  radial-gradient(#c4c4c4 1.05px, transparent 1.05px), radial-gradient(#c4c4c4 1.05px, #ececec 1.05px);
+	background-size: 42px 42px;
+	background-position: 0 0,21px 21px;
+}
+
+main{
+    margin-top: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	height: 80vh;
+}
+.container-all{
+    display: flex;
+    flex-direction: row wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 87%;
+    height: 100%;
+}
+

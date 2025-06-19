@@ -1,0 +1,119 @@
+.information{
+    height: fit-content;
+	animation: pop-in .8s ease;
+	animation-fill-mode: both;
+}
+
+.information .berita-container{
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+	padding: 0 1.85em;
+	animation: pop-in .8s ease;
+	animation-fill-mode: both;
+	animation-delay: 400ms;
+}
+
+.information .berita{
+    background-color: white;
+    border-radius: 5px;
+    /* box-shadow: 0px 6px 25px 6px rgba(0, 0, 0, 0.1); */
+    width: 400px;
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+	border-radius: 18px;
+
+	min-height: 10em;
+	overflow: hidden;
+}
+
+.information .berita .content {
+	padding: 0 15px 10px 15px;
+    display: flex;
+    flex-direction: column;
+	padding: 1.15em 0;
+
+	height: 100%;
+}
+
+.information .berita img {
+	width: 100%;
+	aspect-ratio: 4/3;
+	object-fit: cover;
+	background: #efefef;
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+
+}
+
+.information .berita .header-information{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+	margin-bottom: .75em;
+	
+	& p:last-of-type {
+		text-align: right;
+	}
+
+	& p:first-of-type {
+		text-align: left;
+	}
+}
+
+.information h2{
+    margin: 0;
+    padding: 20px 0 30px 0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    background: linear-gradient(to right, #e0c0ab, #d73f11);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+	margin-bottom: .75em;
+
+}
+
+.information h3{
+    text-align: left;
+    line-height: 27px;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+	margin-bottom: .75em;
+
+	display: -webkit-box;
+    max-width: 400px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.information a{
+    text-decoration: none;
+    font-size: 13px;
+    width: 95px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(to right, #4C60A5, #6d87b5);
+    border: 1px solid transparent;
+    transition: all 0.6s ease;
+	margin-top: auto;
+
+}
+
+.information a:hover{
+    background: none;
+    color: #4C60A5;
+    font-weight: 700;
+    border: 1px solid #4C60A5;
+    transition: all 0.6s ease;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistik</title>
+  	<link rel="icon" type="image/x-icon" href="../assets/logo-mini.svg">
+    <link rel="stylesheet" href="../assets-statistik/header.css"/>
+    <link rel="stylesheet" href="../assets-statistik/form.css"/>
+    <link rel="stylesheet" href="../assets-statistik/main.css"/>
+    <link rel="stylesheet" href="../assets-statistik/statistik.css"/>
+    <!-- Font Awesome 6.5.0 dengan integrity yang benar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+	<link aria-attr="global" rel="stylesheet" href="../res/global.css">
+  	<script aria-attr="global" src="../res/global.js" type="module"></script>	
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>MAX Home</h1>
+            <ul>
+                <li><a href="/#home">Beranda</a></li>
+				<li class="dropdown">
+					<button type="button" class="dropdown-btn">
+						Program
+						<i class="fa fa-caret-down"></i>
+					</button>
+
+					<div class="dropdown-content">
+						<a class="dropdown-item" href="./program-power.html">Power and Strength</a>
+						<a class="dropdown-item" href="./program-fat.html">Fat Loss</a>
+						<a class="dropdown-item" href="./program-muscle.html">Muscle Building</a>
+					</div>
+				</li>
+                <li><a href="./statistik.html">Statistik</a></li>
+                <li><a href="./berita.html">Artikel</a></li> 
+                <li><a href="./tentang.html">Tentang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-all">
+            <div class="container-form">
+                <h2>Yuk kenali tubuh kamu lebih baik!</h2>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Laki-laki</option>
+                        <option value="female">Perempuan</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Umur</label>
+                    <input type="number" id="age" name="age">
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Berat badan</label>
+                    <input type="number" id="weight" name="weight">
+                </div>
+
+                <div class="form-group">
+                    <label for="height">Tinggi badan</label>
+                    <input type="number" id="height" name="height">
+                </div>
+
+                <div class="form-group">
+                    <label for="fitness">Tingkat kebugaran</label>
+                    <select id="fitness" name="fitness">
+                        <option value="low">Rendah</option>
+                        <option value="medium">Sedang</option>
+                        <option value="high">Tinggi</option>
+                    </select>
+                </div>
+
+                <button type="submit">Kirim</button>
+            </div>
+
+            <div class="parent-statistics">
+                <div class="container-statistics">
+                    <div class="statistics-group">
+                        <h3>BMR</h3>
+                        <div class="statistics-value" id="bmr-value">
+                            <p class="value-number">-</p>
+                            <p class="value-unit">Kalori min/hari</p>
+                        </div>
+                    </div>
+
+                    <div class="statistics-group">
+                        <h3>TDEE</h3>
+                        <div class="statistics-value" id="">
+                            <p class="value-number">-</p>
+                            <p class="value-unit">Kalori max/hari</p>
+                        </div>
+                    </div>
+
+                    <div class="statistics-group">
+                        <h3>BB ideal</h3>
+                        <div class="statistics-value" id="">
+                            <p class="value-number">-</p>
+                            <p class="value-unit">Kg</p>
+                        </div>
+                    </div>
+
+                    <div class="statistics-group">
+                        <h3>Status BB</h3>
+                        <div class="statistics-value" id="">
+                            <p class="value-number">-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-tips">
+                    <div class="title-tips"> 
+                        <h3 style="margin: 0;">Tips</h3> 
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <p class="ai-result">Tips akan muncul setelah Anda menghitung BMR, TDEE, atau Berat Badan Ideal.</p>
+                </div>
+
+                <div class="container-funfact">
+                    <div class="title-funfact"> 
+                        <h3 style="margin: 0;">Fun Fact</h3> 
+                        <i class="fa-solid fa-face-grin-beam"></i>
+                    </div>
+                    <p class="fun-fact-content">Tahukah kamu? BMR akan menurun seiring bertambahnya usia, bahkan jika berat badan tetap.</p>
+                </div>
+        </div>
+    </main>
+
+	<footer>
+		<div class="three-side">
+			<div class="left">
+				<h4>M.A.X Home</h4>
+				<p>Revolusi home workout berbasis sains yang mengubah ruang biasa menjadi laboratorium fisik premium. Dengan program efektif Muscle Building, Fat Loss, dan Power and Strength setiap sudut rumah Anda menjadi panggung transformasi.</p>
+			</div>
+			<div class="middle">
+				
+			</div>
+			<div class="right">
+				<h4>Beranda</h4>
+				<ul>
+					<li><a href="/#what">Apa Itu M.A.X</a></li>
+					<li><a href="/#why">Why M.A.X Home</a></li>
+				</ul>	
+			</div>
+			<div class="right">
+				<h4>Program</h4>
+				<ul>
+					<li><a href="./routes/program-muscle.html">Fat Los</a></li>
+					<li><a href="./routes/program-fat.html">Muscle Building</a></li>
+					<li><a href="./routes/program-power.html">Power and Strength</a></li>
+				</ul>	
+			</div>
+		</div>
+	</footer>
+
+    <script src="../res/statistik.js"></script>
+</body>
+</html>
