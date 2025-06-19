@@ -17,6 +17,7 @@ exports.handler = async (event) => {
   });
 
   const data = await openRouterResponse.json();
+  console.log(data)
 
   return {
     statusCode: 200,
