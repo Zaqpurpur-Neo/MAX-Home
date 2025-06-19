@@ -1,5 +1,3 @@
-const api_key = "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"
-
 const funFacts = [
 	"BMR (Basal Metabolic Rate) menurun seiring bertambahnya usia, bahkan jika berat badan tetap.",
 	"Otot membakar lebih banyak kalori daripada lemak, bahkan saat tubuh sedang istirahat.",
@@ -137,16 +135,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			<div class="loading-skeleton"></div>
 		`;
 
-		fetch("https://openrouter.ai/api/v1/chat/completions", {
+		fetch("/.netlify/functions/chat", {
 		  method: "POST",
 		  headers: {
-			"Authorization": "Bearer " + api_key,
-			'HTTP-Referer': 'https://max-home-fit.netlify.app/routes/statistik',
 			"Content-Type": "application/json"
 		  },
 		  body: JSON.stringify({
-			"stream": true,
-			"model": "deepseek/deepseek-r1-0528-qwen3-8b:free",
 			"messages": [
 			  {
 				  "role": "system",
