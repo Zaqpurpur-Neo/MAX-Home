@@ -1,3 +1,5 @@
+const bearear = "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"
+
 const funFacts = [
 	"BMR (Basal Metabolic Rate) menurun seiring bertambahnya usia, bahkan jika berat badan tetap.",
 	"Otot membakar lebih banyak kalori daripada lemak, bahkan saat tubuh sedang istirahat.",
@@ -135,12 +137,15 @@ document.addEventListener("DOMContentLoaded", function () {
 			<div class="loading-skeleton"></div>
 		`;
 
-		fetch("/.netlify/functions/chat", {
+		fetch("https://openrouter.ai/api/v1/chat/completions", {
 		  method: "POST",
 		  headers: {
+      		"Authorization": `Bearer ${bearear}`,
 			"Content-Type": "application/json"
 		  },
 		  body: JSON.stringify({
+			"stream": true,
+      		"model": "deepseek/deepseek-r1-0528-qwen3-8b:free",
 			"messages": [
 			  {
 				  "role": "system",
