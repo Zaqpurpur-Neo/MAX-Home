@@ -1,4 +1,4 @@
-const bearear = "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"
+const bearear = "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"
 
 const funFacts = [
 	"BMR (Basal Metabolic Rate) menurun seiring bertambahnya usia, bahkan jika berat badan tetap.",
